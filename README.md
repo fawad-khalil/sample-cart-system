@@ -10,7 +10,7 @@ Please note that this a starter project, not a complete project and may contain 
 4. Redis
 5. JWT
 
-# Setting-up the project
+# Setting-up the project:
 1. Set up mongodb 4.0 using https://www.mongodb.com/download-center#community
 2. Set up redis using https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04
 3. git clone https://github.com/fawad-khalil/sample-cart-system
@@ -19,7 +19,7 @@ Please note that this a starter project, not a complete project and may contain 
 6. npm install
 7. npm start
 
-# Project Structure
+# Project Structure:
 1. helper: helper JS files that contain helper functions such as wrapper to mongoose and redis etc.
 2. libs: libraries that exist globally such as connection to mongodb using mongoose, and redis etc.
 3. middlewares: global middlewares that would apply to all express routes
