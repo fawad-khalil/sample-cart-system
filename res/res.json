@@ -1,0 +1,113 @@
+{   
+    "routes_prefix": "/api",
+    
+    "success_response_obj": {
+        "message": "",
+        "code": 200,
+        "status": true,
+        "data": null
+    },
+
+    "fail_response_obj": {
+        "message": "",
+        "code": 400,
+        "status": false,
+        "error": null
+    },
+
+    "mongo_connect_success": "Successfully Connected to MongoDB at ",
+    "mongo_connect_fail": "Failed to connect to MongoDB at ",
+
+    "redis_connect_success": "Successfully Connected to Redis server at ",
+    "redis_connect_fail": "Failed to connect to Redis server at ",
+    "redis_monitor_mode_on": "Redis monitor mode activated.",
+
+    "db_fetch_success": "Found Successfully.",
+    "db_fetch_fail": "Failed to Fetch.",
+
+    "db_update_success": "Updated Successfully.",
+    "db_update_fail": "Failed to Update.",
+
+    "db_insert_success": "Inserted Successfully.",
+    "db_insert_fail": "Failed to Insert.",
+
+    "db_delete_success": "Deleted Successfully.",
+    "db_delete_fail": "Failed to Delete.",
+
+    "mongodb_invalid_id": "Provided MongoDB Id is not valid.",
+
+    "order_already_exists": "The requested product is already in your cart.",
+
+    "wishlist_already_exists": "The requested product is already in your wishlist.",
+
+    "unexpected_error": "Some unexpected error occured. Retry!",
+
+    "res_path": "/res/",
+    "resources_path": "/res/res.json",
+    "config_path": "/res/config.json",
+    "private.key_path": "/res/private.key",
+    "public.key_path": "/res/public.key",
+    
+    "helper_path": "/helper/",
+    "encryptionHelper_path": "/helper/encryptionHelper",
+    "jwtHelper_path": "/helper/jwtHelper",
+    "mongooseHelper_path": "/helper/mongooseHelper",
+    "redisHelper_path": "/helper/redisHelper",
+    "utils_path": "/helper/utils",
+    "validator_path": "/helper/validator",
+
+    "routes_path": "/routes/",
+    "index_path": "/routes/index",
+
+    "libs_path": "/libs/",
+    "mongooseConnect_path": "/libs/mongooseConnect",
+    "redisConnect_path": "/libs/redisConnect",
+
+    "modules_path": "/modules/",
+    "activity_controller_path": "/modules/activity/controller/",
+    "activity_middleware_path": "/modules/activity/middleware/",
+    "activity_model_path": "/modules/activity/model/",
+    "activity_route_path": "/modules/activity/route/",
+
+    "order_controller_path": "/modules/order/controller/",
+    "order_middleware_path": "/modules/order/middleware/",
+    "order_model_path": "/modules/order/model/",
+    "order_route_path": "/modules/order/route/",
+
+    "product_controller_path": "/modules/product/controller/",
+    "product_middleware_path": "/modules/product/middleware/",
+    "product_model_path": "/modules/product/model/",
+    "product_route_path": "/modules/product/route/",
+
+    "productCategory_controller_path": "/modules/productCategory/controller/",
+    "productCategory_middleware_path": "/modules/productCategory/middleware/",
+    "productCategory_model_path": "/modules/productCategory/model/",
+    "productCategory_route_path": "/modules/productCategory/route/",
+
+    "productSubCategory_controller_path": "/modules/productSubCategory/controller/",
+    "productSubCategory_middleware_path": "/modules/productSubCategory/middleware/",
+    "productSubCategory_model_path": "/modules/productSubCategory/model/",
+    "productSubCategory_route_path": "/modules/productSubCategory/route/",
+    
+    "requestLog_controller_path": "/modules/requestLog/controller/",
+    "requestLog_middleware_path": "/modules/requestLog/middleware/",
+    "requestLog_model_path": "/modules/requestLog/model/",
+    "requestLog_route_path": "/modules/requestLog/route/",
+
+    "user_controller_path": "/modules/user/controller/",
+    "user_middleware_path": "/modules/user/middleware/",
+    "user_model_path": "/modules/user/model/",
+    "user_route_path": "/modules/user/route/",
+
+    "order_user_id_path": "user._id",
+    "wishlist_user_id_path": "user._id",
+
+    "activity_model": "activities",
+    "order_model": "orders",
+    "product_model": "products",
+    "productCategory_model": "productcategories",
+    "productSubCategory_model": "productsubcategories",
+    "requestLog_model": "requestlogs",
+    "user_model": "users",
+    "wishlist_model": "wishlists"
+}
