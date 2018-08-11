@@ -22,35 +22,35 @@ Please note that this a starter project, not a complete project and may contain 
 8. npm start
 
 # Project Structure:
-.
+	.
 
-├── helper # helper JS files that contain helper functions such as wrapper to mongoose and redis etc.
+	├── helper # helper JS files that contain helper functions such as wrapper to mongoose and redis etc.
 
-├── src # source files of the app
+	├── src # source files of the app
 
-	├── libs # libraries that exist globally such as connection to mongodb using mongoose, and redis etc.
-	├── middlewares # global middlewares that would apply to all express routes
-	├── modules # different modules of the app. Each subfolder represents a module
-	├── modules
-		├── module-name # a module
-			├── controller # logics handling of the module
-				├── helper.js # Use case wrapper of the module. Calls Mongoose and redis wrapper etc. in use cases
-				├── module-name.js # Business logic wrapper of the module. Provides business logic to the use case in different 							scenarios
-				
-			├── middleware # middleware of the routes of the modules
-			├── model
-				├── schema.js # mongoose schema of the entity related to the module
-				├── model.js # mongoose model of the entity related to the module
+		├── libs # libraries that exist globally such as connection to mongodb using mongoose, and redis etc.
+		├── middlewares # global middlewares that would apply to all express routes
+		├── modules # different modules of the app. Each subfolder represents a module
+		├── modules
+			├── module-name # a module
+				├── controller # logics handling of the module
+					├── helper.js # Use case wrapper of the module. Calls Mongoose and redis wrapper etc. in use cases
+					├── module-name.js # Business logic wrapper of the module. Provides business logic to the use case in different 							scenarios
+					
+				├── middleware # middleware of the routes of the modules
+				├── model
+					├── schema.js # mongoose schema of the entity related to the module
+					├── model.js # mongoose model of the entity related to the module
 
-			├── route # routes related to the module
-	
-	├── routes
-		├── index.js # all routes of modules in the app. Whenever a new module/route is created, it's route should 									be imported to this file to be added to the main app and exposed by the API
+				├── route # routes related to the module
+		
+		├── routes
+			├── index.js # all routes of modules in the app. Whenever a new module/route is created, it's route should 									be imported to this file to be added to the main app and exposed by the API
 
-	├── app.js # contains main app object and initialization of the main app
+		├── app.js # contains main app object and initialization of the main app
 
-├── res # global resources for the app
+	├── res # global resources for the app
 
-	├── config.json # configuration settings existing globally for the app such as address of mongodb server
+		├── config.json # configuration settings existing globally for the app such as address of mongodb server
 
-	├── res.json # constant resources such as string constants, paths etc.
+		├── res.json # constant resources such as string constants, paths etc.
