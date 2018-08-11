@@ -9,6 +9,7 @@ Please note that this a starter project, not a complete project and may contain 
 3. MongoDB 4.0
 4. Redis
 5. JWT
+6. RSA encryption
 
 # Setting-up the project:
 1. Set up mongodb 4.0 using https://www.mongodb.com/download-center#community
@@ -16,23 +17,35 @@ Please note that this a starter project, not a complete project and may contain 
 3. git clone https://github.com/fawad-khalil/sample-cart-system
 4. git pull origin master
 5. cd <download-path>/sample-cart-system
-6. npm install
-7. npm start
+6. Go to http://travistidwell.com/jsencrypt/demo/ and generate a key pair. Copy those keys to res/public.key and res/private.key respectively.
+7. npm install
+8. npm start
 
 # Project Structure:
-1. helper: helper JS files that contain helper functions such as wrapper to mongoose and redis etc.
-2. libs: libraries that exist globally such as connection to mongodb using mongoose, and redis etc.
-3. middlewares: global middlewares that would apply to all express routes
-4. modules/: different modules of the app. Each subfolder represents a module
-5. modules/<module-name>/controller/: logics handling of the module
-6. modules/<module-name>/controller/helper.js: Use case wrapper of the module. Calls Mongoose and redis wrapper etc. in use cases
-7. modules/<module-name>/controller/<file-name>.js: Business logic wrapper of the module. Provides business logic to the use case in different scenarios
-8. modules/<module-name>/middleware/: middleware of the routes of the modules
-9. modules/<module-name>/model/schema.js: mongoose schema of the entity related to the module
-10. modules/<module-name>/model/model.js: mongoose model of the entity related to the module
-11. modules/<module-name>/route/: routes related to the module
-12. res/: global resources for the app
-13. res/config.json: configuration settings existing globally for the app such as address of mongodb server
-14. res/res.json: constant resources such as string constants, paths etc.
-15. routes/index.js: all routes of modules in the app. Whenever a new module/route is created, it should be imported to this file to be added to the main app and exposed by the API
-16. app.js: contains main app object and initialization of the main app
+.
+├── helper                          	# helper JS files that contain helper functions such as wrapper to mongoose and redis etc.
+├── src									# source files of the app
+	├── libs                            # libraries that exist globally such as connection to mongodb using mongoose, and redis etc.
+	├── middlewares                     # global middlewares that would apply to all express routes
+	├── modules                         # different modules of the app. Each subfolder represents a module
+	├── modules
+		├── module-name					# a module
+			├── controller              # logics handling of the module
+				├── helper.js           # Use case wrapper of the module. Calls Mongoose and redis wrapper etc. in use cases
+				├── module-name.js      # Business logic wrapper of the module. Provides business logic to the use case in different 							scenarios
+				
+			├── middleware              # middleware of the routes of the modules
+			├── model
+				├── schema.js           # mongoose schema of the entity related to the module
+				├── model.js            # mongoose model of the entity related to the module
+
+			├── route                   # routes related to the module
+	
+	├── routes
+		├── index.js                    # all routes of modules in the app. Whenever a new module/route is created, it's route should 									be imported to this file to be added to the main app and exposed by the API
+
+	├── app.js                          # contains main app object and initialization of the main app
+
+├── res                             	# global resources for the app
+	├── config.json                 	# configuration settings existing globally for the app such as address of mongodb server
+	├── res.json                    	# constant resources such as string constants, paths etc.

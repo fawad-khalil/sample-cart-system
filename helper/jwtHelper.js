@@ -2,8 +2,8 @@ const fs = require('fs');
 const jwt = require('jsonwebtoken');
 
 // use 'utf8' to get string instead of byte array  (512 bit key)
-var privateKEY = fs.readFileSync('/home/fawad/Documents/khreedari/node-app/res/private.key', 'utf8');
-var publicKEY = fs.readFileSync('/home/fawad/Documents/khreedari/node-app/res/public.key', 'utf8');
+var privateKEY = fs.readFileSync('/home/fawad/Documents/Projects/sample-cart-system/res/private.key', 'utf8');
+var publicKEY = fs.readFileSync('/home/fawad/Documents/Projects/sample-cart-system/res/public.key', 'utf8');
 module.exports = {
 	sign: (payload, $Options) => {
 		/*

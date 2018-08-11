@@ -1,4 +1,4 @@
-let redisClient = require('../libs/redisConnect');
+let redisClient = require('../src/libs/redisConnect');
 
 let setKeyForever = (key, value) => {
 	return redisClient.set(key, value);
