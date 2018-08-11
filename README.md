@@ -23,7 +23,6 @@ Please note that this a starter project, not a complete project and may contain 
 
 # Project Structure:
 	.
-
 	├── helper # helper JS files that contain helper functions such as wrapper to mongoose and redis etc.
 	├── src # source files of the app
 		├── libs # libraries that exist globally such as connection to mongodb using mongoose, and redis etc.
