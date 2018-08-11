@@ -25,9 +25,7 @@ Please note that this a starter project, not a complete project and may contain 
 	.
 
 	├── helper # helper JS files that contain helper functions such as wrapper to mongoose and redis etc.
-
 	├── src # source files of the app
-
 		├── libs # libraries that exist globally such as connection to mongodb using mongoose, and redis etc.
 		├── middlewares # global middlewares that would apply to all express routes
 		├── modules # different modules of the app. Each subfolder represents a module
@@ -50,7 +48,5 @@ Please note that this a starter project, not a complete project and may contain 
 		├── app.js # contains main app object and initialization of the main app
 
 	├── res # global resources for the app
-
 		├── config.json # configuration settings existing globally for the app such as address of mongodb server
-
 		├── res.json # constant resources such as string constants, paths etc.
